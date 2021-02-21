@@ -1,0 +1,486 @@
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.1
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.1
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.1
+	0;JMP
+	@END.BOOL.1
+	0;JMP
+(POSITIVE.Y.1)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.1
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.1
+	0;JMP
+(REG.COMP.1)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.1
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.1)
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.2
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.2
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.2
+	0;JMP
+	@END.BOOL.2
+	0;JMP
+(POSITIVE.Y.2)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.2
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.2
+	0;JMP
+(REG.COMP.2)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.2
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.2)
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.3
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.3
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.3
+	0;JMP
+	@END.BOOL.3
+	0;JMP
+(POSITIVE.Y.3)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.3
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.3
+	0;JMP
+(REG.COMP.3)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.3
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.3)
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.4
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.4
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.4
+	0;JMP
+	@END.BOOL.4
+	0;JMP
+(POSITIVE.Y.4)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.4
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.4
+	0;JMP
+(REG.COMP.4)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.4
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.4)
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.5
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.5)
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 16384
+	@16384
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16383
+	@16383
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.6
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.6)

@@ -1,0 +1,4467 @@
+//push constant 17// on the stack.
+	@17
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 17//on the stack.
+	@17
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.1
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.1)
+//push constant 17        // and the book "The Elements of Computing Systems"
+	@17
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16
+	@16
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.2
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.2)
+//push constant 16
+	@16
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 17
+	@17
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.3
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.3)
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.4
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.4
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.4
+	0;JMP
+	@END.BOOL.4
+	0;JMP
+(POSITIVE.Y.4)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.4
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.4
+	0;JMP
+(REG.COMP.4)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.4
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.4)
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.5
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.5
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.5
+	0;JMP
+	@END.BOOL.5
+	0;JMP
+(POSITIVE.Y.5)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.5
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.5
+	0;JMP
+(REG.COMP.5)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.5
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.5)
+//push constant 891//push constant 5000
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.6
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.6
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.6
+	0;JMP
+	@END.BOOL.6
+	0;JMP
+(POSITIVE.Y.6)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.6
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.6
+	0;JMP
+(REG.COMP.6)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.6
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.6)
+//push constant 32767
+	@32767
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 32766
+	@32766
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.7
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.7
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.7
+	0;JMP
+	@END.BOOL.7
+	0;JMP
+(POSITIVE.Y.7)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.7
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.7
+	0;JMP
+(REG.COMP.7)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.7
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.7)
+//push constant 32766
+	@32766
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 32767
+	@32767
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.8
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.8
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.8
+	0;JMP
+	@END.BOOL.8
+	0;JMP
+(POSITIVE.Y.8)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.8
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.8
+	0;JMP
+(REG.COMP.8)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.8
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.8)
+//push constant 32766
+	@32766
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 32766
+	@32766
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.9
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.9
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.9
+	0;JMP
+	@END.BOOL.9
+	0;JMP
+(POSITIVE.Y.9)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.9
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.9
+	0;JMP
+(REG.COMP.9)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.9
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.9)
+//push constant 57
+	@57
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//   push constant 31
+	@31
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//			push constant 53///sdadasdas asdkjs adjlk;sdjf kjsdhaalk jlkdas
+	@53
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//					add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//push constant 112
+	@112
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//           sub   
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M-D
+//neg //Not even close baby
+	@SP
+	A=M-1
+	M=-M
+//and
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M&D
+//push constant 82
+	@82
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//or
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M|D
+//not
+	@SP
+	A=M-1
+	M=!M
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.10
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.10
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.10
+	0;JMP
+	@END.BOOL.10
+	0;JMP
+(POSITIVE.Y.10)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.10
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.10
+	0;JMP
+(REG.COMP.10)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.10
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.10)
+//push constant 891 // -1
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.11
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.11
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.11
+	0;JMP
+	@END.BOOL.11
+	0;JMP
+(POSITIVE.Y.11)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.11
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.11
+	0;JMP
+(REG.COMP.11)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.11
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.11)
+//push constant 892 //0
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.12
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.12
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.12
+	0;JMP
+	@END.BOOL.12
+	0;JMP
+(POSITIVE.Y.12)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.12
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.12
+	0;JMP
+(REG.COMP.12)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.12
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.12)
+//push constant 891//-1
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.13
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.13
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.13
+	0;JMP
+	@END.BOOL.13
+	0;JMP
+(POSITIVE.Y.13)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.13
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.13
+	0;JMP
+(REG.COMP.13)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.13
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.13)
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.14
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.14
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.14
+	0;JMP
+	@END.BOOL.14
+	0;JMP
+(POSITIVE.Y.14)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.14
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.14
+	0;JMP
+(REG.COMP.14)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.14
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.14)
+//push constant 892//-1
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.15
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.15
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.15
+	0;JMP
+	@END.BOOL.15
+	0;JMP
+(POSITIVE.Y.15)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.15
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.15
+	0;JMP
+(REG.COMP.15)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.15
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.15)
+//push constant 30000//0
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.16
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.16
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.16
+	0;JMP
+	@END.BOOL.16
+	0;JMP
+(POSITIVE.Y.16)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.16
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.16
+	0;JMP
+(REG.COMP.16)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.16
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.16)
+//push constant 30000//-1
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.17
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.17
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.17
+	0;JMP
+	@END.BOOL.17
+	0;JMP
+(POSITIVE.Y.17)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.17
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.17
+	0;JMP
+(REG.COMP.17)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.17
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.17)
+//push constant 30000//0
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.18
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.18
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.18
+	0;JMP
+	@END.BOOL.18
+	0;JMP
+(POSITIVE.Y.18)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.18
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.18
+	0;JMP
+(REG.COMP.18)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.18
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.18)
+//push constant 892			//0
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891                   ///////////////////////ack?
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.19
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.19
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.19
+	0;JMP
+	@END.BOOL.19
+	0;JMP
+(POSITIVE.Y.19)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.19
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.19
+	0;JMP
+(REG.COMP.19)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.19
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.19)
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.20
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.20
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.20
+	0;JMP
+	@END.BOOL.20
+	0;JMP
+(POSITIVE.Y.20)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.20
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.20
+	0;JMP
+(REG.COMP.20)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.20
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.20)
+//push constant 891 // 0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.21
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.21
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.21
+	0;JMP
+	@END.BOOL.21
+	0;JMP
+(POSITIVE.Y.21)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.21
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.21
+	0;JMP
+(REG.COMP.21)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.21
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.21)
+//push constant 892 //-1
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.22
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.22
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.22
+	0;JMP
+	@END.BOOL.22
+	0;JMP
+(POSITIVE.Y.22)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.22
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.22
+	0;JMP
+(REG.COMP.22)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.22
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.22)
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.23
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.23
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.23
+	0;JMP
+	@END.BOOL.23
+	0;JMP
+(POSITIVE.Y.23)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.23
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.23
+	0;JMP
+(REG.COMP.23)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.23
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.23)
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.24
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.24
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.24
+	0;JMP
+	@END.BOOL.24
+	0;JMP
+(POSITIVE.Y.24)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.24
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.24
+	0;JMP
+(REG.COMP.24)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.24
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.24)
+//push constant 892//0
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.25
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.25
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.25
+	0;JMP
+	@END.BOOL.25
+	0;JMP
+(POSITIVE.Y.25)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.25
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.25
+	0;JMP
+(REG.COMP.25)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.25
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.25)
+//push constant 30000//0
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.26
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.26)
+//push constant 30000//0
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.27
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.27)
+//push constant 30000//-1
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.28
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.28)
+//push constant 30000//-1
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.29
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.29)
+//push constant 1234
+	@1234
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 12345
+	@12345
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 12
+	@12
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop local 3 
+	@LCL
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop local 2 
+	@LCL
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop local 1
+	@LCL
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//push local 3
+	@LCL
+	D=M
+	@3
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push local 1
+	@LCL
+	D=M
+	@1
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push local 2
+	@LCL
+	D=M
+	@2
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 23
+	@23
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 2345
+	@2345
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 23456
+	@23456
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop argument 3 
+	@ARG
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop argument 2 
+	@ARG
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop argument 1
+	@ARG
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//push argument 3
+	@ARG
+	D=M
+	@3
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push argument 1
+	@ARG
+	D=M
+	@1
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push argument 2
+	@ARG
+	D=M
+	@2
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 111
+	@111
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 1110
+	@1110
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 11116
+	@11116
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop this 3 
+	@THIS
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop this 2 
+	@THIS
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop this 1
+	@THIS
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop static 3
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@MultiTest.3
+	M=D
+//push constant 3333
+	@3333
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 33
+	@33
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 332
+	@332
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop that 3 
+	@THAT
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop that 2 
+	@THAT
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop that 1
+	@THAT
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//push constant 5000
+	@5000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 5010
+	@5010
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop pointer 0 
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THIS
+	M=D
+//pop pointer 1 
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THAT
+	M=D
+//push pointer 1
+	@THAT
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push pointer 0
+	@THIS
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 11
+	@11
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 10
+	@10
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 56
+	@56
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop this 3 
+	@THIS
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop this 2 
+	@THIS
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop this 1
+	@THIS
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//push constant 66
+	@66
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 98
+	@98
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 324
+	@324
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop that 3 
+	@THAT
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop that 2 
+	@THAT
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop that 1
+	@THAT
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//push static 3
+	@MultiTest.3
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 77
+	@77
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 88
+	@88
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 99
+	@99
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop temp 3 
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@R8
+	M=D
+//pop temp 2 
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@R7
+	M=D
+//pop temp 1
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@R6
+	M=D
+//push temp 3
+	@R8
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push temp 1
+	@R6
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push temp 2
+	@R7
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 17// on the stack.
+	@17
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 17//on the stack.
+	@17
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.30
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.30)
+//push constant 17        // and the book "The Elements of Computing Systems"
+	@17
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 16
+	@16
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.31
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.31)
+//push constant 16
+	@16
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 17
+	@17
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.32
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.32)
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.33
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.33
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.33
+	0;JMP
+	@END.BOOL.33
+	0;JMP
+(POSITIVE.Y.33)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.33
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.33
+	0;JMP
+(REG.COMP.33)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.33
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.33)
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.34
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.34
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.34
+	0;JMP
+	@END.BOOL.34
+	0;JMP
+(POSITIVE.Y.34)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.34
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.34
+	0;JMP
+(REG.COMP.34)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.34
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.34)
+//push constant 891//push constant 5000
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.35
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.35
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.35
+	0;JMP
+	@END.BOOL.35
+	0;JMP
+(POSITIVE.Y.35)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.35
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.35
+	0;JMP
+(REG.COMP.35)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.35
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.35)
+//push constant 32767
+	@32767
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 32766
+	@32766
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.36
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.36
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.36
+	0;JMP
+	@END.BOOL.36
+	0;JMP
+(POSITIVE.Y.36)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.36
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.36
+	0;JMP
+(REG.COMP.36)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.36
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.36)
+//push constant 32766
+	@32766
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 32767
+	@32767
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.37
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.37
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.37
+	0;JMP
+	@END.BOOL.37
+	0;JMP
+(POSITIVE.Y.37)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.37
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.37
+	0;JMP
+(REG.COMP.37)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.37
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.37)
+//push constant 32766
+	@32766
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 32766
+	@32766
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.38
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.38
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.38
+	0;JMP
+	@END.BOOL.38
+	0;JMP
+(POSITIVE.Y.38)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.38
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.38
+	0;JMP
+(REG.COMP.38)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.38
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.38)
+//push constant 57
+	@57
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//   push constant 31
+	@31
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//			push constant 53///sdadasdas asdkjs adjlk;sdjf kjsdhaalk jlkdas
+	@53
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//					add
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M+D
+//push constant 112
+	@112
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//           sub   
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M-D
+//neg //Not even close baby
+	@SP
+	A=M-1
+	M=-M
+//and
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M&D
+//push constant 82
+	@82
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//or
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	M=M|D
+//not
+	@SP
+	A=M-1
+	M=!M
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.39
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.39
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.39
+	0;JMP
+	@END.BOOL.39
+	0;JMP
+(POSITIVE.Y.39)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.39
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.39
+	0;JMP
+(REG.COMP.39)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.39
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.39)
+//push constant 891 // -1
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.40
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.40
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.40
+	0;JMP
+	@END.BOOL.40
+	0;JMP
+(POSITIVE.Y.40)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.40
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.40
+	0;JMP
+(REG.COMP.40)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.40
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.40)
+//push constant 892 //0
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.41
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.41
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.41
+	0;JMP
+	@END.BOOL.41
+	0;JMP
+(POSITIVE.Y.41)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.41
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.41
+	0;JMP
+(REG.COMP.41)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.41
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.41)
+//push constant 891//-1
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.42
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.42
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.42
+	0;JMP
+	@END.BOOL.42
+	0;JMP
+(POSITIVE.Y.42)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.42
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.42
+	0;JMP
+(REG.COMP.42)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.42
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.42)
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.43
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.43
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.43
+	0;JMP
+	@END.BOOL.43
+	0;JMP
+(POSITIVE.Y.43)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.43
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.43
+	0;JMP
+(REG.COMP.43)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.43
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.43)
+//push constant 892//-1
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.44
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.44
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.44
+	0;JMP
+	@END.BOOL.44
+	0;JMP
+(POSITIVE.Y.44)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.44
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.44
+	0;JMP
+(REG.COMP.44)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.44
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.44)
+//push constant 30000//0
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.45
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.45
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.45
+	0;JMP
+	@END.BOOL.45
+	0;JMP
+(POSITIVE.Y.45)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.45
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.45
+	0;JMP
+(REG.COMP.45)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.45
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.45)
+//push constant 30000//-1
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.46
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.46
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.46
+	0;JMP
+	@END.BOOL.46
+	0;JMP
+(POSITIVE.Y.46)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.46
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.46
+	0;JMP
+(REG.COMP.46)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.46
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.46)
+//push constant 30000//0
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//lt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.47
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.47
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.47
+	0;JMP
+	@END.BOOL.47
+	0;JMP
+(POSITIVE.Y.47)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.47
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.47
+	0;JMP
+(REG.COMP.47)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.47
+	D;JGT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.47)
+//push constant 892			//0
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891                   ///////////////////////ack?
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.48
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.48
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.48
+	0;JMP
+	@END.BOOL.48
+	0;JMP
+(POSITIVE.Y.48)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.48
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.48
+	0;JMP
+(REG.COMP.48)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.48
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.48)
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.49
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.49
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.49
+	0;JMP
+	@END.BOOL.49
+	0;JMP
+(POSITIVE.Y.49)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.49
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.49
+	0;JMP
+(REG.COMP.49)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.49
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.49)
+//push constant 891 // 0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.50
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.50
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.50
+	0;JMP
+	@END.BOOL.50
+	0;JMP
+(POSITIVE.Y.50)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.50
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.50
+	0;JMP
+(REG.COMP.50)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.50
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.50)
+//push constant 892 //-1
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.51
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.51
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.51
+	0;JMP
+	@END.BOOL.51
+	0;JMP
+(POSITIVE.Y.51)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.51
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.51
+	0;JMP
+(REG.COMP.51)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.51
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.51)
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.52
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.52
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.52
+	0;JMP
+	@END.BOOL.52
+	0;JMP
+(POSITIVE.Y.52)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.52
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.52
+	0;JMP
+(REG.COMP.52)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.52
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.52)
+//push constant 891//0
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 892
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.53
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.53
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.53
+	0;JMP
+	@END.BOOL.53
+	0;JMP
+(POSITIVE.Y.53)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.53
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.53
+	0;JMP
+(REG.COMP.53)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.53
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.53)
+//push constant 892//0
+	@892
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 891
+	@891
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//gt
+	@SP
+	A=M-1
+	D=M
+	@POSITIVE.Y.54
+	D;JGE
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.54
+	D;JLT
+	@SP
+	AM=M-1
+	A=A-1
+	M=-1
+	@END.BOOL.54
+	0;JMP
+	@END.BOOL.54
+	0;JMP
+(POSITIVE.Y.54)
+	@SP
+	A=M-1
+	A=A-1
+	D=M
+	@REG.COMP.54
+	D;JGE
+	@SP
+	AM=M-1
+	A=A-1
+	M=0
+	@END.BOOL.54
+	0;JMP
+(REG.COMP.54)
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@END.BOOL.54
+	D;JLT
+	@SP
+	A=M-1
+	M=0
+(END.BOOL.54)
+//push constant 30000//0
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.55
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.55)
+//push constant 30000//0
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.56
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.56)
+//push constant 30000//-1
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//neg
+	@SP
+	A=M-1
+	M=-M
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.57
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.57)
+//push constant 30000//-1
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 30000
+	@30000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//eq
+	@SP
+	AM=M-1
+	D=M
+	A=A-1
+	D=D-M
+	@SP
+	A=M-1
+	M=-1
+	@BOOL.OP.END.58
+	D;JEQ
+	@SP
+	A=M-1
+	M=0
+(BOOL.OP.END.58)
+//push constant 1234
+	@1234
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 12345
+	@12345
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 12
+	@12
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop local 3 
+	@LCL
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop local 2 
+	@LCL
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop local 1
+	@LCL
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//push local 3
+	@LCL
+	D=M
+	@3
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push local 1
+	@LCL
+	D=M
+	@1
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push local 2
+	@LCL
+	D=M
+	@2
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 23
+	@23
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 2345
+	@2345
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 23456
+	@23456
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop argument 3 
+	@ARG
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop argument 2 
+	@ARG
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop argument 1
+	@ARG
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//push argument 3
+	@ARG
+	D=M
+	@3
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push argument 1
+	@ARG
+	D=M
+	@1
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push argument 2
+	@ARG
+	D=M
+	@2
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 5000
+	@5000
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 5010
+	@5010
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop pointer 0 
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THIS
+	M=D
+//pop pointer 1 
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@THAT
+	M=D
+//push pointer 1
+	@THAT
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push pointer 0
+	@THIS
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 11
+	@11
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 10
+	@10
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 56
+	@56
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop this 3 
+	@THIS
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop this 2 
+	@THIS
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop this 1
+	@THIS
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//push this 3
+	@THIS
+	D=M
+	@3
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push this 1
+	@THIS
+	D=M
+	@1
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push this 2
+	@THIS
+	D=M
+	@2
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 66
+	@66
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 98
+	@98
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 324
+	@324
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop that 3 
+	@THAT
+	D=M
+	@3
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop that 2 
+	@THAT
+	D=M
+	@2
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//pop that 1
+	@THAT
+	D=M
+	@1
+	D=D+A
+	@SP
+	A=M
+	M=D
+	A=A-1
+	D=M
+	A=A+1
+	A=M
+	M=D
+	@SP
+	M=M-1
+//push that 3
+	@THAT
+	D=M
+	@3
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push that 1
+	@THAT
+	D=M
+	@1
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push that 2
+	@THAT
+	D=M
+	@2
+	A=D+A
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 77
+	@77
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 88
+	@88
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push constant 99
+	@99
+	D=A
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop temp 3 
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@R8
+	M=D
+//pop temp 2 
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@R7
+	M=D
+//pop temp 1
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@R6
+	M=D
+//push temp 3
+	@R8
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push temp 1
+	@R6
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//push temp 2
+	@R7
+	D=M
+	@SP
+	M=M+1
+	A=M-1
+	M=D
+//pop static 3
+	@SP
+	M=M-1
+	A=M
+	D=M
+	@MultiTest2.3
+	M=D

@@ -1,0 +1,67 @@
+- input can be directory or file
+
+- working in 16-bit range (not adding two numbers so the sum is bigger than
+  2^15 or smaller than -2^15
+
+- popping into constant is invalid
+
+- generated asm code should be efficient
+
+
+//check equality of signs
+    "\t@SP",
+    "\tAM=M-1",
+    "\tD=M",
+    @Y_GT_0
+    D;JGT
+    @Y_LT_0
+    D;JLT
+(Y_GT_0)
+    @SP
+    "\tA=M-2",
+    D=M
+    @SAME_SIGN
+    D;JGT
+    @SP
+    "\tA=M-1",
+    D=M
+    @TRUE
+    D; + jmp_operator
+    @FALSE
+    D; + jmp_operator
+(Y_LT_0)
+    @SP
+    "\tA=M-2",
+    D=M
+    @SAME_SIGN
+    D;JLT
+    @SP
+    "\tA=M-1",
+    D=M
+    @TRUE
+    D; + jmp_operator
+    @FALSE
+    D; + jmp_operator
+(TRUE)
+    "\t@SP",
+    "\tA=M-1",
+    "\tM=-1",
+(FALSE)
+    "\t@SP",
+    "\tA=M-1",
+    "\tM=0",
+(SAME_SIGN)
+    "\t@SP",
+    "\tAM=M-1",
+    "\tD=M",
+    "\tA=A-1",
+    "\tD=D-M",
+    "\t@SP",
+    "\tA=M-1",
+    "\tM=-1",
+    "\t@BOOL.OP.END." + str(BOOLEAN_OPERATOR_COUNTER),
+    "\tD;" + jmp_operator,
+    "\t@SP",
+    "\tA=M-1",
+    "\tM=0",
+    "(BOOL.OP.END." + str(BOOLEAN_OPERATOR_COUNTER) + ")"
